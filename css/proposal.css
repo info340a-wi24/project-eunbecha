@@ -3,6 +3,10 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1{
+  border-bottom: 2px solid black;
+}
+
 body {
   padding: 25px 50px 75px 100px;
 }
