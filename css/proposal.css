@@ -3,10 +3,11 @@ html {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   letter-spacing: -0.75px;
   line-height: 1.5em;
+  color: #1A1A1A;
 }
 
 .bro {
-  background-color: rgb(26, 26, 26);
+  background-color: #1A1A1A;
   color: #fff;
   border-radius: 4px;
   padding: 0.3em 0.6em;
