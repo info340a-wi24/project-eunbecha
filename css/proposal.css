@@ -36,6 +36,11 @@ h3 {
 
 a {
   font-style: normal;
+  color: blue;
+}
+
+a:visited {
+  color: blue;
 }
 /* 
 @media (max-width: 1250px) {
