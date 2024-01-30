@@ -37,6 +37,11 @@ h3 {
   font-style: italic;
 }
 
+hr {
+  margin: 2em 0;
+
+}
+
 a {
   font-style: normal;
   color: blue;
@@ -45,8 +50,11 @@ a {
 a:visited {
   color: blue;
 }
-/* 
-@media (max-width: 1250px) {
-  
+
+@media (min-width: 1024px) { 
+
+  body {
+    padding: 50px 100px;
+  }
+
 }
-*/
