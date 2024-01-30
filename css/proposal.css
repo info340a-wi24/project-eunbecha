@@ -1,11 +1,30 @@
 *,
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  letter-spacing: -0.75px;
+  line-height: 1.5em;
 }
 
-h1{
-  border-bottom: 2px solid black;
+.bro {
+  background-color: rgb(26, 26, 26);
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.3em 0.6em;
 }
+
+.tags {
+  padding: 0.3em 0.6em;
+  border: 1px dashed #000;
+  border-radius: 4px;
+}
+
+.tags:last-child {
+  margin-left: 5px;
+}
+
+/* .container {
+  padding-top: 1.5em;
+} */
 
 body {
   padding: 25px 50px;
@@ -15,3 +34,11 @@ h3 {
   font-style: italic;
 }
 
+a {
+  font-style: normal;
+}
+/* 
+@media (max-width: 1250px) {
+  
+}
+*/
