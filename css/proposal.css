@@ -3,16 +3,26 @@ html {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   letter-spacing: -0.75px;
   line-height: 1.5em;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 
-.bro {
-  background-color: #1A1A1A;
+body {
+  padding: 25px 50px;
+}
+
+/* expands body padding for desktop */
+@media (min-width: 1024px) {
+  body {
+    padding: 50px 100px;
+  }
+}
+
+.title-block {
+  background-color: #1a1a1a;
   color: #fff;
   border-radius: 4px;
   padding: 0.3em 0.6em;
 }
-
 
 .tags {
   padding: 0.3em 0.6em;
@@ -21,16 +31,9 @@ html {
   margin-left: 5px;
 }
 
+/* keep leftmost tag flush */
 .tags:first-of-type {
   margin: 0;
-}
-
-/* .container {
-  padding-top: 1.5em;
-} */
-
-body {
-  padding: 25px 50px;
 }
 
 h3 {
@@ -39,7 +42,6 @@ h3 {
 
 hr {
   margin: 2em 0;
-
 }
 
 a {
@@ -49,12 +51,4 @@ a {
 
 a:visited {
   color: blue;
-}
-
-@media (min-width: 1024px) { 
-
-  body {
-    padding: 50px 100px;
-  }
-
 }
