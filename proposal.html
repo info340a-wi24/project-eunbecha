@@ -3,22 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Paul, Jiyoon, Owen, Eunbe">
-    <meta name="description" content="This is the project proposal of group 7, INFO340 winter 2024.">
+    <meta name="description" content="INFO340 Winter 2024: Group 7 Project Proposal">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/proposal.css">
     <title>Group 7 Project Proposal</title>
 </head>
 <body>
+    <header>
+        <h1><span class="title-block">Project Proposal</span></h1>
+        <span class="tags">INFO 340</span>
+        <span class="tags">Section AB</span>
+        <span class="tags">Group 7</span>
+    </header>
     <div class="container">
-        <header>
-            <h1>INFO340 Group 7 Project Proposal</h1>
-        </header>
         <section>
-            <h2>Problem/Data Domain</h2>
+            <h2>Problem / Data Domain</h2>
             <p>
-                With a multitude of music streaming services and its prevalence in use for today's day and age, it is important that users are satisfied with what
-                streaming platforms have to offer. However, issues such as poor collaborative listening features, and an unavailability of songs are things that have yet to be dealt with.
+                With an abundance of music streaming services and its prevalence of use during today's day and age, it is important that users are satisfied with what
+                streaming platforms have to offer. However, issues such as poor collaborative listening features and an unavailability of songs are things that have yet to be dealt with.
                 In its current landscape, collaborative music consumption doesn't have a lot of great options. Existing systems (e.g. 
-                <cite><a href="https://support.spotify.com/us/article/jam/">Spotify Jam</a></cite>) 
+                <cite><a href="https://support.spotify.com/us/article/jam/" target=”_blank”>Spotify Jam</a></cite>) 
                 are "janky" and hard to navigate, thus discouraging the experience of listening to music with friends. Furthermore, music distribution is often 
                 not consistent throughout multiple different platforms due to a multitude of factors. Sometimes artists won’t push to specific distribution platforms 
                 due to copyright etc.. leading listeners to oftentimes have to visit 2-3 sites just to enjoy the music they like.
@@ -29,35 +33,51 @@
             </p>
         </section>
 
+        <hr>
+
         <section>
             <h2>App Description</h2>
             <h3>Access + Impact</h3>
-            <p>This application will be used by people who listen to all kinds of music, and who is experiencing difficulties
-                accessing music across various platforms. Listening to different kinds of music that are unavailable on certain platforms 
-                would help people enjoy and appreciate music better. It would also greatly benefit less famous artists who upload music 
-                on platforms such as soundcloud; their music will be available to a wider variety of audiences with our application. 
+            <p>
+                This webapp will be used by people who listen to a multitude of different kinds of music, and who struggle with
+                accessing music across various platforms. Specifically, the niche we want to target is users who fall within the aforementioned
+                venn diagram as well as those who listen to music with others in a social setting + are frustrated with existing systems to do so. 
+                We believe that by bringing down the walls/obstacles that those systems have lead to a more sastifying user and listening experience. 
+                Playlists for any occassion can be curated collaboratively by friends with different music tastes and backgrounds, fostering inclusivity.
+                It may also benefit independent/underground artists who solely upload music on platforms such as soundcloud; 
+                their music might be more exposed to a wider variety of audiences through our application. 
             </p>
         
             <h3>Features</h3>
-                <p>
-                    The first feature of our app allows users to access music across multiple different platforms.
-                    Our app helps organize and store all the user's favorite songs conveniently in one place.
-                    We are implementing a search engine that takes in an input of the song and pulls it from another music application.  
-                </p>
-                <p>
-                    The second feature allows users to share and listen to music with other users simultaneously.
-                    Users in the same listening session can queue songs from their playlist to share.
-                </p>
+            <ul>
+                <li>
+                    Our app allows users to easily access music across multiple different platforms. We will be implementing a search function 
+                    that takes in an input in the form of a link or search term and pulls it from another music application.
+                </li>
+                <li>
+                    Users will be able to share and listen to music with others simultaneously:
+                    users in the same listening session should be able to queue songs seamlessly.
+                </li>
+            </ul>
 
             <h3>Information / Data Sources</h3>
-            <p>Something here.</p>
+            <p>
+                Data will be important to obtain and handle for our project, and user data will be crucial for the application to work properly. For the purposes 
+                of this project, we will most likely be
+                creating our own pseudo data which will largely consist of songs that are available in each streaming platform, which will allow users to pull songs
+                from each streaming platform and use them for their own listening. As we will be brining multiple streaming services together to tackle the issue of
+                service exclusive songs, users will be able to search for any song from the wide range of streaming platforms and add them to playlists. Users will
+                also need to make accounts and interact with other accounts to promote our collaborative listening feature, and they will also need to be able to queue up
+                songs. We will need to find a way to collect this data and manage them so that users' playlists are saved in the cache, so that their queue histories are maintained,
+                and so that their accounts can keep all their personal data as well.
+            </p>
     
             <h3>Solution</h3>
             <p>
                 With the features of our application, we hope to resolve the 
-                <cite><a href="https://www.brandwatch.com/blog/pain-points-music-streaming-services/#:~:text=By%20far%2C%20the%20biggest%20pain,the%20biggest%20cause%20for%20complaint.">issues</a></cite>
+                <cite><a href="https://www.brandwatch.com/blog/pain-points-music-streaming-services/#:~:text=By%20far%2C%20the%20biggest%20pain,the%20biggest%20cause%20for%20complaint." target=”_blank”>issues</a></cite>
                 that music enjoyers might have from other streaming platforms. With our application, not only will people be able to have a
-                better experience sharing music with others, but all sharing activities will be located in one place. Additionally,people
+                better experience sharing music with others, but all sharing activities will be located in one place. Additionally, people
                 will find it very useful to find all music in our application. Since some music is exclusive to a streaming service, users will enjoy
                 being able to ignore that exclusivity and experience a cross-platform music streaming service. 
             </p>
