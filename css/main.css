@@ -11,7 +11,7 @@ div {
 }
 
 body {
-    padding: 25px 50px 75px 100px;
+    margin: 3rem;
     font-family: "Inter";
 }
 
@@ -21,13 +21,12 @@ h1, h2{
     font-weight: bold;
 }
 
-sub{
+#listeningNow{
     color: #9B9B9B;
-    font-size: small;
+    font-size: 0.8rem;
     font-weight: 100;
-    padding-left: 2em;
+    margin-top: 0.5rem;
     position: relative;
-    top: -1em;
 }
 
 div input{
@@ -37,19 +36,24 @@ div input{
     border-radius: 0.5em;
 }
 
-.search-bar{
-    width: 35%;
-    background-color: #F5F4F4;
-    color: #9B9B9B;
-    margin-bottom: 3rem;
+.search {
+    display: flex;
+    margin-bottom: 2rem;
     margin-top: 1rem;
 }
 
+.search-bar{
+    flex-grow: 1;
+    background-color: #F5F4F4;
+    color: #9B9B9B;
+}
+
 .submit-button{
-    width: 4%;
     text-align: center;
     color: white;
+    font-size: 16px;
     background-color: black;
+    margin-left: 1rem;
 }
 
 .nowPlaying {
@@ -64,7 +68,6 @@ img {
     width: 64px;
     height: 64px;
     border-radius: 10px;
-
 }
 
 .info-wrapper {
@@ -91,13 +94,10 @@ img {
 }
 
 .controls {
+    display: flex;
     align-items: center;
     padding-top: 5px;
-    justify-content: space-between;
-}
-
-.material-icons {
-    margin-right: 1em;
+    justify-content: space-around;
 }
 
 .track {
@@ -117,4 +117,11 @@ img {
     display: flex;
     justify-content: space-between;
     padding-top: 9px;
+}
+
+
+
+@media (min-width: 768px) { /* large screens (desktop view) */
+
+    
 }
