@@ -1,5 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 html{
     font-size: 16px;
+}
+
+div {
+    display: block;
 }
 
 body {
@@ -10,6 +18,7 @@ body {
 h1, h2{
     font-family: "Inter";
     padding-bottom: 5px;
+    font-weight: bold;
 }
 
 sub{
@@ -32,6 +41,8 @@ div input{
     width: 35%;
     background-color: #F5F4F4;
     color: #9B9B9B;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
 }
 
 .submit-button{
@@ -46,9 +57,64 @@ div input{
     width: 100%;
     border-radius: 15px;
     padding: 15px;
+    margin-top: 25px;
+}
+
+img {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+
+}
+
+.info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.info {
+    flex-grow: 1;
 }
 
 .song-title {
+    font-size: 16px;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0.5em;
     font-weight: bold;
-    font-size: large;
+}
+
+.artist-name {
+    opacity: 70%;
+    font-size: 14px;
+}
+
+.controls {
+    align-items: center;
+    padding-top: 5px;
+    justify-content: space-between;
+}
+
+.material-icons {
+    margin-right: 1em;
+}
+
+.track {
+    margin-top: 1rem;
+    content: '';
+    height: 8px;
+    width: 100%;
+    display: block;
+    background: #d9d9d9;
+    border-radius: 10px;
+}
+
+.time {
+    opacity: 70%;
+    font-size: 14px;
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 9px;
 }
