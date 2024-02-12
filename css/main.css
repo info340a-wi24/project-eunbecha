@@ -11,14 +11,36 @@ div {
 }
 
 body {
-    margin: 3rem;
     font-family: "Inter";
 }
 
-h1, h2{
-    font-family: "Inter";
-    padding-bottom: 5px;
+h1 {
     font-weight: bold;
+    font-style: oblique;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    margin-bottom: 0;
+    color: dodgerblue;
+    display: flex;
+}
+
+.account {
+    color: dodgerblue;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3rem;
+}
+
+.material-icons md-64 {
+    font-size: 64px;
+}
+
+.room {
+    margin: 2.5rem;
+}
+
+h2, h3{
+    padding-bottom: 5px;
 }
 
 #listeningNow{
@@ -52,7 +74,7 @@ div input{
     text-align: center;
     color: white;
     font-size: 16px;
-    background-color: black;
+    background-color: dodgerblue;
     margin-left: 1rem;
 }
 
@@ -61,7 +83,7 @@ div input{
     width: 100%;
     border-radius: 15px;
     padding: 15px;
-    margin-top: 25px;
+    margin-top: 0.5rem;
 }
 
 img {
@@ -121,7 +143,10 @@ img {
 
 
 
+
+
+
 @media (min-width: 768px) { /* large screens (desktop view) */
 
-    
+
 }
