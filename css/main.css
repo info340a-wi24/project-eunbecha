@@ -24,7 +24,7 @@ h1 {
     display: flex;
 }
 
-.account {
+.accountAndHomePage {
     color: dodgerblue;
     display: flex;
     justify-content: flex-end;
