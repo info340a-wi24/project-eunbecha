@@ -194,9 +194,6 @@ footer {
         flex: 1;
     }
 
-    .yourPlaylists {
-    }
-
     .playlistDisplay {
         display: flex;
         flex-wrap: wrap;
