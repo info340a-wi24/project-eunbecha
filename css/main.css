@@ -27,7 +27,8 @@ h1 {
 .accountPageButton {
     color: dodgerblue;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     margin-right: 3rem;
 }
 
@@ -39,8 +40,12 @@ h1 {
     margin: 2.5rem;
 }
 
-h2, h3{
+h2{
     padding-bottom: 5px;
+}
+
+h3{
+    padding-top: 5px;
 }
 
 #listeningNow{
@@ -49,6 +54,11 @@ h2, h3{
     font-weight: 100;
     margin-top: 0.5rem;
     position: relative;
+    margin-left: 10px;
+}
+
+.roomAndListening {
+    display: inline-flex;
 }
 
 div input{
@@ -148,7 +158,8 @@ img {
 .homePageButton {
     color: dodgerblue;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     margin-right: 3rem;
 }
 
@@ -171,6 +182,7 @@ img {
 
 footer {
     margin-top: 2rem;
+    padding-left: 2rem;
 }
 
 table {
@@ -220,4 +232,4 @@ table thead {
         border-radius: 10px;
     }
 
-}
+}   }
