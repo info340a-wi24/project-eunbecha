@@ -169,6 +169,13 @@ img {
     margin-left: 2.5rem;
 }
 
+footer {
+    margin-top: 2rem;
+}
+
+
+@media (min-width: 768px) { /* large screens (desktop view) */
+
 .yourPlaylists {
     display: none;
 }
