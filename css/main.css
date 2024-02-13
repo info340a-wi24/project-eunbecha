@@ -24,7 +24,7 @@ h1 {
     display: flex;
 }
 
-.accountAndHomePage {
+.accountPageButton {
     color: dodgerblue;
     display: flex;
     justify-content: flex-end;
@@ -145,6 +145,13 @@ img {
     margin: 2.5rem;
 }
 
+.homePageButton {
+    color: dodgerblue;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3rem;
+}
+
 .sectionBox {
     display: flex;
     flex-direction: column;
@@ -161,7 +168,41 @@ img {
 .sectionBox h3 {
     margin-left: 2.5rem;
 }
-@media (min-width: 768px) { /* large screens (desktop view) */
 
+.yourPlaylists {
+    display: none;
+}
+
+.playlistDisplay {
+    display: none;
+}
+
+@media (min-width: 768px) { /* large screens (desktop view) */
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-content {
+        flex: 1;
+    }
+
+    .yourPlaylists {
+    }
+
+    .playlistDisplay {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 70%;
+        margin: auto;
+    }
+
+    .playlistDisplay img {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
 
 }
