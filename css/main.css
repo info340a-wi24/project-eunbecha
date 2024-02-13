@@ -141,11 +141,26 @@ img {
     padding-top: 9px;
 }
 
+.accountDetails {
+    margin: 2.5rem;
+}
 
+.sectionBox {
+    display: flex;
+    flex-direction: column;
+}
 
+.box {
+    margin: 0.5rem 2.5rem 2.5rem 2.5rem;
+    background-color: #F5F4F4;
+    width: 300px;
+    border-radius: 15px;
+    padding: 15px;
+}
 
-
-
+.sectionBox h3 {
+    margin-left: 2.5rem;
+}
 @media (min-width: 768px) { /* large screens (desktop view) */
 
 
