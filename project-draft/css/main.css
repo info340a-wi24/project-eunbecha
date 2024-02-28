@@ -24,7 +24,7 @@ h1 {
     display: flex;
 }
 
-.accountPageButton {
+.NavButton {
     color: dodgerblue;
     display: flex;
     justify-content: space-between;
@@ -155,13 +155,7 @@ img {
     margin: 2.5rem;
 }
 
-.homePageButton {
-    color: dodgerblue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 3rem;
-}
+
 
 .sectionBox {
     display: flex;
