@@ -1,8 +1,12 @@
 import React from 'react';
+import { Table } from './Table';
 
-function App (props) {
+
+function App ({props}) {
     return (
-        <div>yes</div>
+        <div>
+            <Table props={props}/>
+        </div>
     );
 }
 
