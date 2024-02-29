@@ -5,7 +5,7 @@ import { TableRow } from './TableRow';
 /* Your code goes here */
 
 function Table({props}) {
-  let columnNames = ['Name', 'Song', 'Url'];
+  let columnNames = ['Song', 'Artist', 'Url'];
   
   let userInput = "UNDERSTAND"
   let selectedData = props.filter(item => item.song === userInput)
