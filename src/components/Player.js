@@ -1,9 +1,21 @@
 import React from 'react';
+import audioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
 
-function Player() {
+// const Player = () => (
+//     <AudioPlayer
+//         autoPlay
+//         src=
+//     />
+// )
+function Player({ src }) {
 
   return (
-    <div>something</div>
+    <audioPlayer
+        src={src}
+        autoPlayAfterSrcChange={false}
+        customControlsSection={['MAIN_CONTROLS', 'VOLUME_CONTROLS']}
+    />
   );
 }
 
