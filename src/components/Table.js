@@ -2,7 +2,7 @@ import React from 'react';
 import { TableHeader } from './TableHeader';
 import { TableRow } from './TableRow';
 
-function Table({ data, searchTerm }) {
+function Table({ data, searchTerm, onSongSelect }) {
   const filteredData = data.filter(item => item.url.includes(searchTerm));
 
   return (
