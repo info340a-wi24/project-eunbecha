@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Table } from './Table';
+import { Player } from './Player';
 import data from '../data/data.json';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         />
         <button onClick={handleSearchTermChange}>+</button>
         </div>
+    <Player />
       <Table data={data} searchTerm={searchTerm} />
     </div>
   );
