@@ -1,38 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { TableHeader } from './TableHeader';
 import { TableRow } from './TableRow';
 
-function Table({ props }) {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [filteredData, setFilteredData] = useState([]);
-
-  const handleInputChange = (event) => {
-    setSearchTerm(event.target.value);
-  };
-
-  const handleAddButtonClick = () => {
-    const userInput = searchTerm.trim();
-    if (userInput) {
-      const foundItem = props.find(item => item.url === userInput);
-      if (foundItem) {
-        setFilteredData(prevData => [...prevData, foundItem]);
-      }
-    }
-    setSearchTerm('');
-  };
+function Table({ data, searchTerm }) {
+  const filteredData = data.filter(item => item.url.includes(searchTerm));
 
   return (
     <div>
-      <div>
-        <input
-          type="text"
-          className="search-bar"
-          value={searchTerm}
-          onChange={handleInputChange}
-          placeholder="Enter URL"
-        />
-        <button onClick={handleAddButtonClick}>+</button>
-      </div>
       <table className='table table-bordered'>
         <TableHeader columnNames={['Song', 'Artist', 'Url']} />
         <tbody>

@@ -1,13 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Table } from './Table';
+import data from '../data/data.json';
 
+function App() {
+  const [searchTerm, setSearchTerm] = useState('');
 
-function App ({props}) {
-    return (
+  const handleSearchTermChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  return (
+    <div>
         <div>
-            <Table props={props}/>
+        <input
+          type="text"
+          value={searchTerm}
+          placeholder="Enter URL"
+        />
+        <button onClick={handleSearchTermChange}>+</button>
         </div>
-    );
+      <Table data={data} searchTerm={searchTerm} />
+    </div>
+  );
 }
 
 export default App;
