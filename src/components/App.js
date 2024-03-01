@@ -21,7 +21,7 @@ function App() {
         <button onClick={handleSearchTermChange}>+</button>
         </div>
     <Player />
-      <Table data={data} searchTerm={searchTerm} />
+    <Table data={data} searchTerm={searchTerm} />
     </div>
   );
 }
