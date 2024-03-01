@@ -34,7 +34,7 @@ function App() {
                 placeholder="Enter URL"
                 onChange={handleSearchTermChange}
             />
-            <button onClick={handleSearchTermChange}>+</button>
+            <button onClick={handleSearchButtonClick}>+</button>
         </div>
     <Player src={selectedSongUrl}/>
     <Table data={tableData} searchTerm={searchTerm} onSongSelect={handleSongSelect} />
