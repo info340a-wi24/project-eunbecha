@@ -11,7 +11,7 @@ function Table({ data, searchTerm }) {
         <TableHeader columnNames={['Song', 'Artist', 'Url']} />
         <tbody>
           {filteredData.map(item => (
-            <TableRow key={item.id} props={item} />
+            <TableRow key={item.id} props={item} onClick={() => onSongSelect(item.url)} />
           ))}
         </tbody>
       </table>
