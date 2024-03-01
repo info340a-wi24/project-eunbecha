@@ -18,7 +18,7 @@ function App() {
   }
 
   const addToTable = (url) => {
-    setTableData([...tableData, { id: Date.now(), url }]);
+    setTableData(prevTableData => [...prevTableData, { id: Date.now(), url }]);
   }
 
   const handleSongSelect = (url) => {

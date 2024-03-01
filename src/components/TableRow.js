@@ -1,11 +1,11 @@
 import React from 'react'; //import React library
 
-function TableRow({props}) {
+function TableRow({song, artist, url}) {
     return (
         <tr>
-            <td>{props.song}</td>
-            <td>{props.artist}</td>
-            <td><a href={props.url}>{props.url}</a></td>
+            <td>{song}</td>
+            <td>{artist}</td>
+            <td><a href={url}>{url}</a></td>
         </tr>
     );
 }
