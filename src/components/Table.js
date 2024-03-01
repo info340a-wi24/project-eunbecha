@@ -1,39 +1,46 @@
-import React from 'react'; //import React library
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { TableHeader } from './TableHeader';
 import { TableRow } from './TableRow';
 
-/* Your code goes here */
+function Table({ props }) {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filteredData, setFilteredData] = useState([]);
 
-function Table({props}) {
-  let columnNames = ['Song', 'Artist', 'Url'];
-  const [songs, setSongs] = useState([]);
+  const handleInputChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
 
   const handleAddButtonClick = () => {
-    let userInput = document.querySelector('.search-bar');
-    let userInputText = userInput.value;
-    setSongs(prevData => [...prevData, userInputText]);
-  }
-  
-  let selectedData = props.filter(item => songs.includes(item.song))
+    const userInput = searchTerm.trim();
+    if (userInput) {
+      const foundItem = props.find(item => item.url === userInput);
+      if (foundItem) {
+        setFilteredData(prevData => [...prevData, foundItem]);
+      }
+    }
+    setSearchTerm('');
+  };
 
-
-  let finalData = selectedData.map(item => (
-    <TableRow key={item.song} props={item}/>
-  ));
-  
-  return(
+  return (
     <div>
       <div>
-        <input type="text" className="search-bar" />
+        <input
+          type="text"
+          className="search-bar"
+          value={searchTerm}
+          onChange={handleInputChange}
+          placeholder="Enter URL"
+        />
         <button onClick={handleAddButtonClick}>+</button>
       </div>
       <table className='table table-bordered'>
-      <TableHeader columnNames={columnNames}/>
-      <tbody>
-        {finalData}
-      </tbody>
-    </table>
+        <TableHeader columnNames={['Song', 'Artist', 'Url']} />
+        <tbody>
+          {filteredData.map(item => (
+            <TableRow key={item.id} props={item} />
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
