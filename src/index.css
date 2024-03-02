@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+html{
+    font-size: 16px;
+}
+
+div {
+    display: block;
+}
+
+body {
+    font-family: "Inter";
+}
+
+h1 {
+    font-weight: bold;
+    font-style: oblique;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    margin-bottom: 0;
+    color: dodgerblue;
+    display: flex;
+}
+
+.NavButton {
+    color: dodgerblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.room {
+    margin: 2.5rem;
+}
+
+h2{
+    padding-bottom: 5px;
+}
+
+h3{
+    padding-top: 5px;
+}
+
+#listeningNow{
+    color: #9B9B9B;
+    font-size: 0.8rem;
+    font-weight: 100;
+    margin-top: 0.5rem;
+    position: relative;
+    margin-left: 10px;
+}
+
+.roomAndListening {
+    display: inline-flex;
+}
+
+div input{
+    font-size: 16px;
+    padding: 12px 20px 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+}
+
+.search {
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.search-bar{
+    flex-grow: 1;
+    background-color: #F5F4F4;
+    color: #9B9B9B;
+}
+
+.submit-button{
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    background-color: dodgerblue;
+    margin-left: 1rem;
+}
+
+.nowPlaying {
+    background-color: #F5F4F4;
+    width: 100%;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 0.5rem 0;
+}
+
+img {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+}
+
+.info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.info {
+    flex-grow: 1;
+}
+
+.song-title {
+    font-size: 16px;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.artist-name {
+    opacity: 70%;
+    font-size: 14px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    justify-content: space-around;
+}
+
+.track {
+    margin-top: 1rem;
+    content: '';
+    height: 8px;
+    width: 100%;
+    display: block;
+    background: #d9d9d9;
+    border-radius: 10px;
+}
+
+.time {
+    opacity: 70%;
+    font-size: 14px;
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 9px;
+}
+
+.accountDetails {
+    margin: 2.5rem;
+}
+
+
+
+.sectionBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    margin: 0.5rem 2.5rem 2.5rem 2.5rem;
+    background-color: #F5F4F4;
+    width: 300px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.sectionBox h3 {
+    margin-left: 2.5rem;
+}
+
+footer {
+    margin-top: 2rem;
+    padding-left: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    color: #9B9B9B;
+    padding: 20px 0;
+    border-bottom: 0.14em solid #E7E7E7;
+}
+
+
+@media (min-width: 768px) { /* large screens (desktop view) */
+
+.yourPlaylists {
+    display: none;
+}
+
+.playlistDisplay {
+    display: none;
+}
+
+@media (min-width: 768px) { /* large screens (desktop view) */
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-content {
+        flex: 1;
+    }
+
+    .playlistDisplay {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 70%;
+        margin: auto;
+    }
+
+    .playlistDisplay img {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+}   }
