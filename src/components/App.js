@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Table } from './Table';
 import { Player } from './Player';
 import data from '../data/data.json';
 import { Routes, Route, Navigate, Link } from 'react-router-dom';
@@ -10,24 +9,7 @@ import { TableRow } from './TableRow';
 function App({ props }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedSongUrl, setSelectedSongUrl] = useState('');
-  const [tableData, setTableData] = useState([]);
 
-  const handleSearchTermChange = (event) => {
-    setSearchTerm(event.target.value);
-  };
-
-  const handleSearchButtonClick = () => {
-    setSelectedSongUrl(searchTerm);
-    addToTable(searchTerm);
-  }
-
-  const addToTable = (url) => {
-    setTableData(prevTableData => [...prevTableData, { id: Date.now(), url }]);
-  }
-
-  const handleSongSelect = (url) => {
-    setSelectedSongUrl(url);
-  };
 
   let columnNames = ['Song', 'Artist', 'Url'];
   const [songs, setSongs] = useState([]);
@@ -36,14 +18,16 @@ function App({ props }) {
     let userInput = document.querySelector('.search-bar');
     let userInputText = userInput.value;
     setSongs(prevData => [...prevData, userInputText]);
+    userInput.value = ''; // Clear input after adding
   }
-  
-  let selectedData = props.filter(item => songs.includes(item.url))
 
-
-  let finalData = selectedData.map(item => (
-    <TableRow key={item.song} props={item}/>
-  ));
+  let finalData = songs.map(songUrl => {
+    const item = data.find(item => item.url === songUrl);
+    if (item) {
+      return <TableRow key={item.song} props={item} />;
+    }
+    return null;
+  });
 
   return (
     <div>
