@@ -10,7 +10,9 @@ function AccountPage() {
 
           <header>
             <div className="NavButton">
-              <h1 className='logo'>Musicify</h1>
+              <a href="/">
+                <h1 className='logo'>Musicify</h1>
+              </a>
               <Link to="/">
                 <span className="material-icons md-64">home</span>
               </Link>
@@ -20,23 +22,21 @@ function AccountPage() {
             <h2 className="accountDetails">Account Details</h2>
             
             <div className="sectionBox">
-                <h3>Account Access</h3>
-                <div className="box">
-                    <div className="accountAccess">
-                        <h4>Log in</h4>
-                        <h4>Sign in</h4>
-                        <h4>Log out</h4>
-                    </div>
-                </div>
+              <div className="box">
+                  <div className="accountAccess">
+                    <a href="/LoginPage.js">
+                      <h3>Account Access</h3>
+                    </a>
+                  </div>
+              </div>
             </div>
 
             <div className="sectionBox">
-                <h3>Edit Profile</h3>
                 <div className="box">
                     <div className="profileEdit">
-                        <h4>Email</h4>
-                        <h4>Password</h4>
-                        <h4>Profile Picture</h4>
+                      <a href="/profilePicPage">
+                        <h3>Edit Profile Picture</h3>
+                      </a>
                     </div>
                 </div>
             </div>
