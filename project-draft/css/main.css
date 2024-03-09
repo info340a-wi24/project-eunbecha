@@ -14,7 +14,29 @@ body {
     font-family: "Inter";
 }
 
-h1 {
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo_login {
+    font-weight: bold;
+    font-style: oblique;
+    color: dodgerblue;
+    font-size: 64px;
+    margin-top: 9rem;
+}
+
+#intro {
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1.logo {
     font-weight: bold;
     font-style: oblique;
     padding-left: 1.5rem;
@@ -23,6 +45,39 @@ h1 {
     color: dodgerblue;
     display: flex;
 }
+
+input[type=email] {
+    border-radius: 12px;
+    border: 1px solid;
+    font-size: 24px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type=password] {
+    border-radius: 12px;
+    border: 1px solid;
+    font-size: 24px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+.signin {
+    font-size: 24px;
+    color: white;
+    border: none;
+    padding: 18px 120px;
+    text-align: center;
+    display: block;
+    background-color: dodgerblue;
+    border-radius: 12px;
+}
+
 
 .NavButton {
     color: dodgerblue;

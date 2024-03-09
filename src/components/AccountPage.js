@@ -10,7 +10,7 @@ function AccountPage() {
 
           <header>
             <div className="NavButton">
-              <h1>Musicify</h1>
+              <h1 className='logo'>Musicify</h1>
               <Link to="/">
                 <span className="material-icons md-64">home</span>
               </Link>

@@ -34,7 +34,7 @@ function MainPage( {props} ) {
     <div>
       <header>
         <div className="NavButton">
-          <h1>Musicify</h1>
+          <h1 className='logo'>Musicify</h1>
           <Link to="/account">
             <span className="material-icons md-64">account_circle</span>
           </Link>
