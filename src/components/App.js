@@ -17,7 +17,7 @@ function App({ props }) {
         <Route path="/" element={<MainPage />} />
         <Route path="/account" element={<AccountPage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="profile" element={<ProfilePicPage />} />
+        <Route path="/profile" element={<ProfilePicPage />} />
       </Routes>
     </div>
   );
