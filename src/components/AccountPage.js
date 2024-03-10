@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route, Navigate, Link } from 'react-router-dom';
+import LoginPage from './LoginPage'
 
 function AccountPage() {
   return (
@@ -24,9 +25,9 @@ function AccountPage() {
             <div className="sectionBox">
               <div className="box">
                   <div className="accountAccess">
-                    <a href="/LoginPage.js">
+                    <Link to="/login">
                       <h3>Account Access</h3>
-                    </a>
+                    </Link>
                   </div>
               </div>
             </div>
@@ -34,9 +35,9 @@ function AccountPage() {
             <div className="sectionBox">
                 <div className="box">
                     <div className="profileEdit">
-                      <a href="/profilePicPage">
+                      <Link to="/profile">
                         <h3>Edit Profile Picture</h3>
-                      </a>
+                      </Link>
                     </div>
                 </div>
             </div>

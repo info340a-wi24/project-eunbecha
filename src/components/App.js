@@ -6,6 +6,8 @@ import AccountPage from './AccountPage';
 import MainPage from './MainPage';
 import { TableHeader } from './TableHeader';
 import { TableRow } from './TableRow';
+import LoginPage from './LoginPage';
+import ProfilePicPage from './ProfilePicPage';
 
 function App({ props }) {
 
@@ -14,6 +16,8 @@ function App({ props }) {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/account" element={<AccountPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="profile" element={<ProfilePicPage />} />
       </Routes>
     </div>
   );
