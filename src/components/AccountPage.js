@@ -3,17 +3,14 @@ import {Link} from 'react-router-dom';
 // import LoginPage from './LoginPage'
 
 function AccountPage() {
-useEffect(() => {
-  document.body.style.backgroundImage = "url('../img/photo1.jpeg')";
-  document.body.style.backgroundPosition = "center";
-  document.body.style.backgroundSize = "cover";
 
-  return () => {
-    document.body.style.backgroundImage = null;
-  document.body.style.backgroundPosition = null;
-  document.body.style.backgroundSize = null;
-  };
-}, []);
+  useEffect(() => {
+    document.body.classList.add('accountPageBody');
+
+    return () => {
+      document.body.classList.remove('accountPageBody');
+    };
+  }, []);
 
   return (
     <div className="AccountPage">

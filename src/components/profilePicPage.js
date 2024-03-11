@@ -1,7 +1,16 @@
-import React, { useState } from 'react';
-import { Routes, Route, Navigate, Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function ProfilePicPage() {
+
+    useEffect(() => {
+        document.body.classList.add('profilePicPageBody');
+    
+        return () => {
+          document.body.classList.remove('profilePicPageBody');
+        };
+      }, []);
+
     const [profilePic, setProfilePic] = useState(null);
 
     const handleFileUpload = (event) => {
@@ -38,7 +47,11 @@ function ProfilePicPage() {
                         <div>No profile picture</div>
                     )}
 
-                    <input type="file" accept="image/*" onChange={handleFileUpload} />
+                    <label htmlFor="fileInput" className="fileInputLabel">
+                        Choose Profile Picture
+                    </label>
+
+                    <input id="fileInput" type="file" accept="image/*" onChange={handleFileUpload} style={{display: 'none'}} />
                 </div>
                 
             </div>
