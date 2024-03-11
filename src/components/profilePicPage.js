@@ -18,29 +18,32 @@ function ProfilePicPage() {
     };
 
     return (
-        <div>
+        <div className='profilePicPage'>
             <div className="flex-container">
 
-            <div className="main-content">
+                <div className="main-content">
 
-                <header>
-                    <div className="NavButton">
-                        <Link to="/">
-                            <h1 className='logo'>Musicify</h1>
-                        </Link>
-                    </div>
-                </header>
+                    <header>
+                        <div className="NavButton">
+                            <Link to="/">
+                                <h1 className='logo'>Musicify</h1>
+                            </Link>
+                        </div>
+                    </header>
 
-                {profilePic ? (
-                    <img src={profilePic} alt="Profile" style={{width: 100, height: 100}} />
-                ) : (
-                    <div>No profile picture</div>
-                )}
+                <div style={{paddingTop: '20px', paddingLeft: '20px'}}>
+                    {profilePic ? (
+                        <img src={profilePic} alt="Profile" style={{width: 100, height: 100}} />
+                    ) : (
+                        <div>No profile picture</div>
+                    )}
 
-                <input type="file" accept="image/*" onChange={handleFileUpload} />
-            </div>
+                    <input type="file" accept="image/*" onChange={handleFileUpload} />
+                </div>
+                
             </div>
         </div>
+    </div>
     )
 }
 
