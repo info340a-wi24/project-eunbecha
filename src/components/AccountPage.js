@@ -52,7 +52,7 @@ function AccountPage() {
             </div>
           </div>
 
-        <div className="yourPlaylists">Your Playlists:</div>
+        {/* <div className="yourPlaylists">Your Playlists:</div> */}
 
       </div>
     </div>
