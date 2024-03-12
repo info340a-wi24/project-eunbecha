@@ -262,34 +262,31 @@ table thead {
 
 @media (min-width: 768px) { /* large screens (desktop view) */
 
-.yourPlaylists {
-    display: none;
-}
+    .yourPlaylists {
+        display: none;
+    }
 
-.playlistDisplay {
-    display: none;
-}
+    .playlistDisplay {
+        display: none;
+    }
 
-.fileInputLabel {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    .fileInputLabel {
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-@media (min-width: 768px) { /* large screens (desktop view) */
+    .yourPlaylists {
+        display: none;
+    }
 
-.yourPlaylists {
-    display: none;
-}
+    .playlistDisplay {
+        display: none;
+    }
 
-.playlistDisplay {
-    display: none;
-}
-
-@media (min-width: 768px) { /* large screens (desktop view) */
     .accountPageBody, .profilePicPageBody {
         background-image: url('../img/photo4.jpeg');
         background-position: top;
@@ -321,5 +318,4 @@ table thead {
         height: 200px;
         border-radius: 10px;
     }
-
-}   }
+};
