@@ -17,7 +17,7 @@ html, body {
     color: var(--black);
     font-size: 16px;
     letter-spacing: -0.5px;
-    padding: 1em;
+    padding: 2em;
 }
 
 div {
@@ -324,7 +324,4 @@ table thead {
         height: 200px;
         border-radius: 10px;
     }
-}
-}
-
 }
