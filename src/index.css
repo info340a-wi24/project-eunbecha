@@ -1,3 +1,5 @@
+/* general styling */
+
 /* colors */
 :root {
     --black: #131313;
@@ -18,6 +20,7 @@ html, body {
     font-size: 16px;
     letter-spacing: -0.5px;
     padding: 2em;
+    height: 100%;
 }
 
 div {
@@ -29,76 +32,26 @@ a {
     color: var(--black);
 }
 
-.login-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+h2 {
+    padding-bottom: 5px;
 }
 
-#logo_login {
-    font-weight: bold;
-    font-style: oblique;
-    color: dodgerblue;
-    font-size: 64px;
-    margin-top: 9rem;
-}
+/* main page styling */
 
-#intro {
-    font-style: italic;
-    font-size: 20px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-h1.logo {
-    font-weight: bold;
-    font-style: oblique;
-    /* padding-left: 1.5rem; */
-    /* padding-top: 1.5rem; */
-    color: dodgerblue;
-    display: flex;
-}
-
-input[type=email] {
-    border-radius: 12px;
-    border: 1px solid;
-    font-size: 24px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    display: block;
-    margin-bottom: 10px;
-}
-
-input[type=password] {
-    border-radius: 12px;
-    border: 1px solid;
-    font-size: 24px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    display: block;
-    margin-bottom: 20px;
-}
-
-
-.signin {
-    font-size: 24px;
-    color: white;
-    border: none;
-    padding: 18px 120px;
-    text-align: center;
-    display: block;
-    background-color: dodgerblue;
-    border-radius: 12px;
-}
-
-.NavButton {
-    color: dodgerblue;
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 3rem;
 }
+
+h1.logo { /* logo */
+    font-weight: bold;
+    font-style: oblique;
+    color: dodgerblue;
+    display: flex;
+}
+
+/* room code + listeners */
 
 .room {
     margin-bottom: 2rem;
@@ -123,18 +76,12 @@ input[type=password] {
     color: var(--dgrey);
 }
 
-h2{
-    padding-bottom: 5px;
-}
+/* search bar/input styling */
 
-h3{
-    padding-top: 5px;
-}
-
-div input{
+div input {
     font-size: 16px;
-    padding: 12px 20px 12px 20px;
-    border: 1px solid #ddd;
+    padding: 1em 1.5em;
+    border: 1px solid var(--mgrey);
     border-radius: 0.5em;
 }
 
@@ -143,17 +90,17 @@ div input{
     margin-top: 1rem;
 }
 
-.search-bar{
+.search-bar {
     flex-grow: 1;
-    background-color: #F5F4F4;
-    color: #000;
+    background-color: var(--lgrey);
+    border-color: var(--mgrey);
 }
 
-.submit-button{
+.submit-button {
+    font-weight: 800;
     border: none;
     border-radius: 0.5em;
-    padding-inline: 1.3em;
-    font-style: bold;
+    padding-inline: 1.5em;
     cursor: pointer;
     color: var(--white);
     background-color: var(--black);
@@ -247,6 +194,7 @@ img {
 }
 
 footer {
+    
     margin-top: 2rem;
     /* padding-left: 2rem; */
 }
@@ -273,6 +221,61 @@ table thead {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* login/signup page styling */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo_login {
+    font-weight: bold;
+    font-style: oblique;
+    color: dodgerblue;
+    font-size: 64px;
+    margin-top: 9rem;
+}
+
+#intro {
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+input[type=email] {
+    border-radius: 12px;
+    border: 1px solid;
+    font-size: 24px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type=password] {
+    border-radius: 12px;
+    border: 1px solid;
+    font-size: 24px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.signin {
+    font-size: 24px;
+    color: white;
+    border: none;
+    padding: 18px 120px;
+    text-align: center;
+    display: block;
+    background-color: dodgerblue;
+    border-radius: 12px;
 }
 
 @media (min-width: 768px) { /* large screens (desktop view) */

@@ -6,7 +6,6 @@ import { TableRow } from './TableRow';
 import data from '../data/data.json';
 
 function MainPage( {props} ) {
-
     const [selectedSongUrl, setSelectedSongUrl] = useState('');
 
     let columnNames = ['Song', 'Artist', 'Url'];
@@ -29,8 +28,9 @@ function MainPage( {props} ) {
 
   return (
     <div>
+      {/* nav */}
       <header>
-        <div className="NavButton">
+        <div className="navigation">
           <h1 className='logo'>Musicify</h1>
           <Link to="/account">
             <span className="material-icons md-64">account_circle</span>
@@ -38,6 +38,7 @@ function MainPage( {props} ) {
         </div>
       </header>
 
+      {/* room code + listeners + search */}
       <div className="room">
         <div className="container">
           <h1> Room <a href="#" className="room-code">57EMB3</a> </h1>
@@ -48,9 +49,13 @@ function MainPage( {props} ) {
           <button onClick={handleAddButtonClick} className="submit-button">+</button>
         </div>
       </div>
-      <h3> Now Playing </h3>
+
+      {/* player */}
+      <h2> Now Playing </h2>
       <Player src={selectedSongUrl}/>
-      <h3>In Queue</h3>
+
+      {/* queue table */}
+      <h2>In Queue</h2>
       <table className='table table-bordered'>
         <TableHeader columnNames={columnNames}/>
         <tbody>
