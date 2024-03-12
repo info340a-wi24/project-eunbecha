@@ -2,7 +2,8 @@
   {
     "song": "ghosts",
     "artist": "Highvyn",
-    "url": "https://open.spotify.com/track/3sJrI1gdELlrExukUqce4O?si=f70ea557431e4ba4"
+    "url": "https://open.spotify.com/track/3sJrI1gdELlrExukUqce4O?si=f70ea557431e4ba4",
+    "localfile": "./ghosts.mp3"
   },
   {
     "song": "UNDERSTAND",

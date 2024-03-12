@@ -1,5 +1,4 @@
 /* general styling */
-
 /* colors */
 :root {
     --black: #131313;
@@ -36,8 +35,13 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* main page styling */
+img {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+}
 
+/* main page styling */
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -51,8 +55,11 @@ h1.logo { /* logo */
     display: flex;
 }
 
-/* room code + listeners */
+footer {
+    margin-top: 2rem;
+}
 
+/* room code + listeners */
 .room {
     margin-bottom: 2rem;
 }
@@ -77,7 +84,6 @@ h1.logo { /* logo */
 }
 
 /* search bar/input styling */
-
 div input {
     font-size: 16px;
     padding: 1em 1.5em;
@@ -107,18 +113,13 @@ div input {
     margin-left: 1rem;
 }
 
+/* not sure what this is for - player? */
 .nowPlaying {
-    background-color: #F5F4F4;
+    background-color: var(--lgrey);
     width: 100%;
     border-radius: 15px;
     padding: 15px;
     margin: 0.5rem 0;
-}
-
-img {
-    width: 64px;
-    height: 64px;
-    border-radius: 10px;
 }
 
 .info-wrapper {
@@ -157,24 +158,35 @@ img {
     height: 8px;
     width: 100%;
     display: block;
-    background: #d9d9d9;
+    background: var(--lgrey);
     border-radius: 10px;
 }
 
 .time {
     opacity: 70%;
     font-size: 14px;
-    color: #333333;
+    color: var(--dgrey);
     display: flex;
     justify-content: space-between;
     padding-top: 9px;
 }
 
+/* table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table thead {
+    color: var(--dgrey);
+    border-bottom: 1px solid var(--mgrey);
+}
+
+/* account page styling */
 .accountDetails {
     margin: 2.5rem;
 }
-
-
 
 .sectionBox {
     display: flex;
@@ -183,7 +195,7 @@ img {
 
 .box {
     margin: 0.5rem 2.5rem 2.5rem 2.5rem;
-    background-color: #F5F4F4;
+    background-color: var(--lgrey);
     width: 300px;
     border-radius: 15px;
     padding: 15px;
@@ -193,38 +205,21 @@ img {
     margin-left: 2.5rem;
 }
 
-footer {
-    
-    margin-top: 2rem;
-    /* padding-left: 2rem; */
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table thead {
-    color: #9B9B9B;
-    padding: 20px 0;
-    border-bottom: 0.14em solid #E7E7E7;
-}
-
+/* profile pic page styling */
 .noProfPic {
     padding-bottom: 0.5rem;
 }
 
 .fileInputLabel {
     display: inline-block;
-    background-color: #007bff;
-    color: #fff;
+    background-color: dodgerblue;
+    color: var(--white);
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
 
 /* login/signup page styling */
-
 .login-container {
     display: flex;
     flex-direction: column;
@@ -269,7 +264,7 @@ input[type=password] {
 
 .signin {
     font-size: 24px;
-    color: white;
+    color: var(--white);
     border: none;
     padding: 18px 120px;
     text-align: center;

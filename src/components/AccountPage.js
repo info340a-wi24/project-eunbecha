@@ -19,7 +19,7 @@ function AccountPage() {
         <div className="main-content">
 
           <header>
-            <div className="NavButton">
+            <div className="navigation">
               <a href="/">
                 <h1 className='logo'>Musicify</h1>
               </a>

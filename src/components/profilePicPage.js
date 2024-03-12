@@ -33,7 +33,7 @@ function ProfilePicPage() {
                 <div className="main-content">
 
                     <header>
-                        <div className="NavButton">
+                        <div className="navigation">
                             <Link to="/">
                                 <h1 className='logo'>Musicify</h1>
                             </Link>

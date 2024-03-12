@@ -5,11 +5,10 @@ import 'react-h5-audio-player/lib/styles.css';
 function Player({ src }) {
 
   return (
-    console.log(src),
     <div>
-        {src && (
+        {(
             <ReachH5AudioPlayer
-                src={src}
+                src={src || ''}
                 autoPlayAfterSrcChange={false}
                 customControlsSection={['MAIN_CONTROLS', 'VOLUME_CONTROLS']}
             />
