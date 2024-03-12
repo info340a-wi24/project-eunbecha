@@ -5,6 +5,7 @@ import 'react-h5-audio-player/lib/styles.css';
 function Player({ src }) {
 
   return (
+    console.log(src),
     <div>
         {src && (
             <ReachH5AudioPlayer

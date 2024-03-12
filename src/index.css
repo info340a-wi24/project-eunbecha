@@ -55,8 +55,7 @@ h1.logo {
     font-weight: bold;
     font-style: oblique;
     /* padding-left: 1.5rem; */
-    padding-top: 1.5rem;
-    margin-bottom: 0;
+    /* padding-top: 1.5rem; */
     color: dodgerblue;
     display: flex;
 }
@@ -101,9 +100,27 @@ input[type=password] {
     margin-right: 3rem;
 }
 
+.room {
+    margin-bottom: 2rem;
+}
+
+.room .container {
+    display: flex;
+    align-items: center;
+}
+
 .room-code {
     border-bottom: 0.1em solid var(--black);
     margin-bottom: 50px;
+}
+
+.v-divider {
+    border-left: 1px solid var(--dgrey);
+    margin-inline: 1em;
+}
+
+#listening {
+    color: var(--dgrey);
 }
 
 h2{
@@ -114,29 +131,15 @@ h3{
     padding-top: 5px;
 }
 
-#listeningNow{
-    color: #9B9B9B;
-    font-size: 0.8rem;
-    font-weight: 100;
-    margin-top: 0.5rem;
-    position: relative;
-    margin-left: 10px;
-}
-
-.roomAndListening {
-    display: inline-flex;
-}
-
 div input{
     font-size: 16px;
     padding: 12px 20px 12px 20px;
     border: 1px solid #ddd;
-    border-radius: 0.2em;
+    border-radius: 0.5em;
 }
 
 .search {
     display: flex;
-    margin-bottom: 2rem;
     margin-top: 1rem;
 }
 
@@ -146,15 +149,14 @@ div input{
     color: #000;
 }
 
-.search:active {
-    border: none;
-}
-
 .submit-button{
-    text-align: center;
-    color: white;
-    font-size: 16px;
-    background-color: dodgerblue;
+    border: none;
+    border-radius: 0.5em;
+    padding-inline: 1.3em;
+    font-style: bold;
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--black);
     margin-left: 1rem;
 }
 
@@ -321,5 +323,7 @@ table thead {
         height: 200px;
         border-radius: 10px;
     }
+}
+}
 
-}   }
+}

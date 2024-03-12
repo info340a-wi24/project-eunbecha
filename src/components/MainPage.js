@@ -29,9 +29,8 @@ function MainPage( {props} ) {
       return null;
     });
 
-
   return (
-    <div className="container">
+    <div>
       <header>
         <div className="NavButton">
           <h1 className='logo'>Musicify</h1>
@@ -42,12 +41,12 @@ function MainPage( {props} ) {
       </header>
 
       <div className="room">
-        <div className="roomAndListening align-middle">
+        <div className="container">
           <h1> Room <a href="#" className="room-code">57EMB3</a> </h1>
-          <p id="listeningNow">| 4 Listening Now</p>
+          <p id="listening"><span className="v-divider"></span>4 Listening Now</p>
         </div>
         <div className="search">
-          <input type="text" className="search-bar" placeholder="Enter URL" />
+          <input type="text" className="search-bar" placeholder="Paste Link" />
           <button onClick={handleAddButtonClick} className="submit-button">+</button>
         </div>
       </div>
