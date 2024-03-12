@@ -288,7 +288,7 @@ table thead {
     }
 
     .accountPageBody, .profilePicPageBody {
-        background-image: url('../img/photo4.jpeg');
+        background-image: url('../img/photo4.jpg');
         background-position: top;
         background-size: cover;
         width: 100%;
