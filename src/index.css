@@ -1,18 +1,32 @@
+/* colors */
+:root {
+    --black: #131313;
+    --white: #ffffff;
+    --dgrey: #9B9B9B; /*text*/
+    --lgrey: #F5F4F4; /*bg*/
+    --mgrey: #E7E7E7; /*outlines*/
+}
+
 * {
     box-sizing: border-box;
     font-family: "Inter";
 }
 
-html{
+html, body {
+    font-family: "Inter";
+    color: var(--black);
     font-size: 16px;
+    letter-spacing: -0.5px;
+    padding: 5em;
 }
 
 div {
     display: block;
 }
 
-body {
-    font-family: "Inter";
+a {
+    text-decoration: none;
+    color: var(--black);
 }
 
 .login-container {
@@ -40,7 +54,7 @@ body {
 h1.logo {
     font-weight: bold;
     font-style: oblique;
-    padding-left: 1.5rem;
+    /* padding-left: 1.5rem; */
     padding-top: 1.5rem;
     margin-bottom: 0;
     color: dodgerblue;
@@ -87,8 +101,9 @@ input[type=password] {
     margin-right: 3rem;
 }
 
-.room {
-    margin: 2.5rem;
+.room-code {
+    border-bottom: 0.1em solid var(--black);
+    margin-bottom: 50px;
 }
 
 h2{
@@ -116,7 +131,7 @@ div input{
     font-size: 16px;
     padding: 12px 20px 12px 20px;
     border: 1px solid #ddd;
-    border-radius: 0.5em;
+    border-radius: 0.2em;
 }
 
 .search {
@@ -128,7 +143,11 @@ div input{
 .search-bar{
     flex-grow: 1;
     background-color: #F5F4F4;
-    color: #9B9B9B;
+    color: #000;
+}
+
+.search:active {
+    border: none;
 }
 
 .submit-button{
@@ -227,7 +246,7 @@ img {
 
 footer {
     margin-top: 2rem;
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
 }
 
 table {
@@ -239,11 +258,6 @@ table thead {
     color: #9B9B9B;
     padding: 20px 0;
     border-bottom: 0.14em solid #E7E7E7;
-}
-
-a {
-    text-decoration: none;
-    color: dodgerblue;
 }
 
 @media (min-width: 768px) { /* large screens (desktop view) */

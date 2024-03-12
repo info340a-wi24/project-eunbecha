@@ -31,7 +31,7 @@ function MainPage( {props} ) {
 
 
   return (
-    <div>
+    <div className="container">
       <header>
         <div className="NavButton">
           <h1 className='logo'>Musicify</h1>
@@ -42,13 +42,13 @@ function MainPage( {props} ) {
       </header>
 
       <div className="room">
-        <div className="roomAndListening">
-          <h2> Room <u>57EMB3</u> </h2>
+        <div className="roomAndListening align-middle">
+          <h1> Room <a href="#" className="room-code">57EMB3</a> </h1>
           <p id="listeningNow">| 4 Listening Now</p>
         </div>
         <div className="search">
           <input type="text" className="search-bar" placeholder="Enter URL" />
-          <button onClick={handleAddButtonClick}>+</button>
+          <button onClick={handleAddButtonClick} className="submit-button">+</button>
         </div>
       </div>
       <h3> Now Playing </h3>
