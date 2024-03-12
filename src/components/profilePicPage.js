@@ -44,7 +44,7 @@ function ProfilePicPage() {
                     {profilePic ? (
                         <img src={profilePic} alt="Profile" style={{width: 100, height: 100}} />
                     ) : (
-                        <div>No profile picture</div>
+                        <div className='noProfPic'>No profile picture</div>
                     )}
 
                     <label htmlFor="fileInput" className="fileInputLabel">

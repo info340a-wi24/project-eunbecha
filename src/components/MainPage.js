@@ -3,12 +3,10 @@ import { Link } from 'react-router-dom';
 import { Player } from './Player';
 import { TableHeader } from './TableHeader';
 import { TableRow } from './TableRow';
-import AccountPage from './AccountPage';
 import data from '../data/data.json';
 
 function MainPage( {props} ) {
 
-    const [searchTerm, setSearchTerm] = useState('');
     const [selectedSongUrl, setSelectedSongUrl] = useState('');
 
     let columnNames = ['Song', 'Artist', 'Url'];
@@ -18,7 +16,7 @@ function MainPage( {props} ) {
       let userInput = document.querySelector('.search-bar');
       let userInputText = userInput.value;
       setSongs(prevData => [...prevData, userInputText]);
-      userInput.value = ''; // Clear input after adding
+      userInput.value = '';
     }
 
     let finalData = songs.map(songUrl => {
