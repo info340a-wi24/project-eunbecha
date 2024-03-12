@@ -264,6 +264,15 @@ table thead {
     padding-bottom: 0.5rem;
 }
 
+.fileInputLabel {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 @media (min-width: 768px) { /* large screens (desktop view) */
 
     .yourPlaylists {
@@ -272,15 +281,6 @@ table thead {
 
     .playlistDisplay {
         display: none;
-    }
-
-    .fileInputLabel {
-        display: inline-block;
-        background-color: #007bff;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
     }
 
     .yourPlaylists {
