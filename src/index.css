@@ -260,6 +260,10 @@ table thead {
     border-bottom: 0.14em solid #E7E7E7;
 }
 
+.noProfPic {
+    padding-bottom: 0.5rem;
+}
+
 @media (min-width: 768px) { /* large screens (desktop view) */
 
     .yourPlaylists {
@@ -288,7 +292,7 @@ table thead {
     }
 
     .accountPageBody, .profilePicPageBody {
-        background-image: url('../img/photo4.jpg');
+        background-image: url('../img/photo4new.jpg');
         background-position: top;
         background-size: cover;
         width: 100%;
