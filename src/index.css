@@ -126,6 +126,7 @@ div input {
     border-radius: 0.5em;
     border: 1px solid var(--mgrey);
     padding: 1em 2em;
+    margin-bottom: 2em;
 }
 
 .song-title {
@@ -133,37 +134,11 @@ div input {
     margin-bottom: -0.5em;
 }
 
-/* .controls {
-    display: flex;
-    align-items: center;
-    padding-top: 5px;
-    justify-content: space-around;
-}
-
-.track {
-    margin-top: 1rem;
-    content: '';
-    height: 8px;
-    width: 100%;
-    display: block;
-    background: var(--lgrey);
-    border-radius: 10px;
-}
-
-.time {
-    opacity: 70%;
-    font-size: 14px;
-    color: var(--dgrey);
-    display: flex;
-    justify-content: space-between;
-    padding-top: 9px;
-} */
-
 /* table styling */
 table {
-    min-width: 50em;
     border-collapse: collapse;
     text-align: left;
+    margin-bottom: 4em;
 }
 
 table thead {

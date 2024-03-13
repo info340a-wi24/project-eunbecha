@@ -57,7 +57,7 @@ function MainPage() {
             {/* queue table */}
             <h2>In Queue</h2>
             <table className='table table-bordered'>
-                <TableHeader columnNames={['Song', 'Artist', 'Url']} />
+                <TableHeader columnNames={['Title', 'Artist', 'Link']} />
                 <tbody>
                     {finalData}
                 </tbody>
