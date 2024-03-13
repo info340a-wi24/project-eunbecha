@@ -84,6 +84,10 @@ footer {
 }
 
 /* search bar/input styling */
+.test-link {
+    color: var(--dgrey);
+}
+
 div input {
     font-size: 16px;
     padding: 1em 1.5em;
@@ -98,6 +102,7 @@ div input {
 
 .search-bar {
     flex-grow: 1;
+    max-width: 50em;
     background-color: var(--lgrey);
     border-color: var(--mgrey);
 }
@@ -113,39 +118,22 @@ div input {
     margin-left: 1rem;
 }
 
-/* not sure what this is for - player? */
-.nowPlaying {
-    background-color: var(--lgrey);
-    width: 100%;
-    border-radius: 15px;
-    padding: 15px;
-    margin: 0.5rem 0;
-}
-
-.info-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.info {
+/* now playing */
+.player {
     flex-grow: 1;
+    max-width: 40em;
+    background-color: var(--lgrey);
+    border-radius: 0.5em;
+    border: 1px solid var(--mgrey);
+    padding: 1em 2em;
 }
 
 .song-title {
-    font-size: 16px;
-    padding-top: 1rem;
-    padding-bottom: 0;
-    margin-bottom: 0.5em;
     font-weight: bold;
+    margin-bottom: -0.5em;
 }
 
-.artist-name {
-    opacity: 70%;
-    font-size: 14px;
-}
-
-.controls {
+/* .controls {
     display: flex;
     align-items: center;
     padding-top: 5px;
@@ -169,11 +157,11 @@ div input {
     display: flex;
     justify-content: space-between;
     padding-top: 9px;
-}
+} */
 
 /* table styling */
 table {
-    width: 100%;
+    min-width: 50em;
     border-collapse: collapse;
     text-align: left;
 }
@@ -181,6 +169,14 @@ table {
 table thead {
     color: var(--dgrey);
     border-bottom: 1px solid var(--mgrey);
+}
+
+th, td {
+    padding-block: 0.5em;
+}
+
+td:not(:first-child), th:not(:first-child) {
+    padding-left: 2em;
 }
 
 /* account page styling */

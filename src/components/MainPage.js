@@ -43,6 +43,7 @@ function MainPage() {
                     <h1> Room <a href="#" className="room-code">57EMB3</a> </h1>
                     <p id="listening"><span className="v-divider"></span>4 Listening Now</p>
                 </div>
+                <p class="test-link">https://open.spotify.com/track/3sJrI1gdELlrExukUqce4O?si=f70ea557431e4ba4 (testing purposes)</p>
                 <div className="search">
                     <input type="text" className="search-bar" placeholder="Paste Link" />
                     <button onClick={handleAddButtonClick} className="submit-button">+</button>
