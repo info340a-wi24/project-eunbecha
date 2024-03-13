@@ -134,6 +134,13 @@ div input {
     margin-bottom: -0.5em;
 }
 
+.react-audio-player {
+    width: 100%;
+    /* background: none; */
+    border: 1px solid var(--mgrey);
+    border-radius: 50px;
+}
+
 /* table styling */
 table {
     border-collapse: collapse;
